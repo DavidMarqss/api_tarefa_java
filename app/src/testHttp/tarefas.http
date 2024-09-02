@@ -1,22 +1,28 @@
-@baseUrl = https://8080-marcoweb-correcaotarefa-uwe6kzwk6za.ws-us115.gitpod.io
+@baseUrl = https://8080-davidmarqss-apitarefaja-rtv9678n0mg.ws-us115.gitpod.io
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVGFyZWZhcyIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzI1MzE0OTM0fQ.i7r8EdBYO0E0xdG3lBdzKGS-W_8hLtTHX4X95nHqkV0
+
 
 ###
 GET {{baseUrl}}/tarefas
+Authorization: Bearer {{token}}
 
 ###
 POST {{baseUrl}}/tarefas
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-    "descricao": "Criar Formulário",
+    "descricao": "Criar Formulári@o",
     "concluido": false
 }
 
 ###
 GET {{baseUrl}}/tarefas/4
+Authorization: Bearer {{token}}
 
 ###
 PUT {{baseUrl}}/tarefas/1
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
@@ -26,3 +32,4 @@ Content-Type: application/json
 
 ###
 DELETE {{baseUrl}}/tarefas/1
+Authorization: Bearer {{token}}
